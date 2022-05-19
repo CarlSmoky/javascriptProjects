@@ -63,7 +63,9 @@ scrollLinks.forEach(link => {
     if (!fixedNav) {
       position = position - navHeight;
     }
-    if (navHeight > 20) {
+    //82 is navHeight when viewport is wide
+    //283.59375 is navheight when navtoggle is clicked
+    if (navHeight > 82) {
       position = position + containerHeight;
     }
     window.scrollTo({
